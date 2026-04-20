@@ -68,19 +68,27 @@
             border: 1px solid var(--border-color);
         }
 
+        .screenshots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .screenshots img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
         code {
             background-color: var(--code-bg);
             padding: 0.2rem 0.4rem;
             border-radius: 4px;
             font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-        }
-
-        pre {
-            background-color: var(--secondary-bg);
-            padding: 1rem;
-            border-radius: 8px;
-            overflow-x: auto;
-            border: 1px solid var(--border-color);
         }
 
         footer {
@@ -100,13 +108,22 @@
 <div class="container">
     <header>
         <h1>Migrator</h1>
-        <p class="subtitle">Fast save or restore Mac OS applications and their settings</p>
+        <p class="subtitle">Fast save or restore macOS applications and their settings</p>
         <a href="https://github.com/telenkor/migrator" class="btn">View on GitHub</a>
     </header>
 
     <section id="about">
         <h2>About</h2>
-        <p><strong>Migrator</strong> is useful if you are reinstalling Mac OS or want to transfer configured applications to another computer. You don’t have to open .dmg files of each application, drag each one into Applications or run installers and re-enter a huge number of settings.</p>
+        <p><strong>Migrator</strong> is useful if you are reinstalling macOS or want to transfer configured applications to another computer. You don’t have to open .dmg files of each application, drag each one into Applications or run installers and re-enter a huge number of settings.</p>
+    </section>
+
+    <section id="screenshots">
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+            <img src="https://github.com/telenkor/migrator/assets/31967374/4dcafa0c-4e0c-41c1-b1dc-88ef4be6d293" alt="Migrator App List">
+            <img src="https://github.com/telenkor/migrator/assets/31967374/929221ea-d04b-43d3-b55e-9c594ceb569b" alt="Settings Transfer">
+            <img src="https://github.com/telenkor/migrator/assets/31967374/3c7b9421-5b0b-4a1e-a2bb-1892eec618e4" alt="Migration Process">
+        </div>
     </section>
 
     <section id="features">
@@ -118,23 +135,23 @@
             </div>
             <div class="feature-card">
                 <h3>Nothing extra</h3>
-                <p>There is no need to collect any service databases (sometimes quite large), caches, and more.</p>
+                <p>There is no need to collect any service databases, caches, or large temporary files.</p>
             </div>
             <div class="feature-card">
                 <h3>Native</h3>
-                <p>Runs on AppleScript and does not require any additional software installation.</p>
+                <p>Built with AppleScript, ensuring smooth integration without requiring third-party software.</p>
             </div>
         </div>
     </section>
 
     <section id="getting-started">
         <h2>Quick Start</h2>
-        <p>Download the image from Releases and copy it to the Applications folder.</p>
-        <a href="https://github.com/telenkor/migrator/releases" class="btn">Go to Releases</a>
+        <p>Download the latest version from the Releases page and move it to your Applications folder.</p>
+        <a href="https://github.com/telenkor/migrator/releases" class="btn" style="background-color: #21262d; border: 1px solid var(--border-color);">Go to Releases</a>
     </section>
 
     <footer>
-        <p>Maintained by <a href="https://github.com/telenkor">telenkor</a>. Licensed under GPL-3.0 license.</p>
+        <p>Maintained by <a href="https://github.com/telenkor">telenkor</a>. Licensed under GPL-3.0.</p>
     </footer>
 </div>
 
